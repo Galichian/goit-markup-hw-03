@@ -11,20 +11,32 @@
     --ModalModal-background: #fcfcfc;
 }
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 body {
     font-family: "roboto", sans-serif;
 
     color: var(--Text);
     background-color: var(--White-background);
 
-    /* font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em; */
+}
+
+.container {
+    width: 1128px;
+    margin-left: auto;
+    margin-right: auto;
+    outline: 2px solid tomato;
 }
 
 .list {
     list-style: none;
     text-decoration: none;
+    padding: 0;
+    margin: 0;
 
 }
 
@@ -96,11 +108,18 @@ body {
 }
 
 /* Heros */
+
 .heros {
+    text-align: center;
     background-color: var(--Dark);
 }
 
 .heros-title {
+    /* padding: 188px 472px 292px; */
+    margin-top: 0;
+    margin-bottom: 48px;
+    min-width: 496px;
+
     color: #FFFFFF;
 
     font-weight: 700;
@@ -112,6 +131,11 @@ body {
 }
 
 .heros-button {
+    display: inline-block;
+    padding: 16px 32px;
+    border-radius: 4px;
+    min-width: 169px;
+    text-align: center;
     color: var(--White-background);
     background-color: var(--Primary-Brand);
 
@@ -128,7 +152,16 @@ body {
 }
 
 /* Наші переваги */
+
+.section-advantages {
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+
 .section-global-subtitle {
+    margin-top: 0;
+    margin-bottom: 8px;
+
     color: var(--Dark);
 
     font-weight: 500;
@@ -139,13 +172,25 @@ body {
 
 .section-global-text,
 .section-team-prof {
+    margin-top: 0;
+    margin-bottom: 0px;
+
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
 
 /* Наші роботи, портфоліо */
+
+.section-works {
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+
 .section-global-title {
+    margin-top: 0;
+    margin-bottom: 72px;
+
     color: var(--Dark);
 
     font-weight: 700;
@@ -157,12 +202,35 @@ body {
 }
 
 /* Наша команда */
+.container-team {
+    width: 1440px;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    outline: 2px solid tomato;
+}
+
 .section-team {
     background-color: var(--Light);
 }
 
 .team-cards {
     background-color: var(--White-background);
+}
+
+.team-name {
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+.container-footer {
+    width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    outline: 2px solid tomato;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .footer-text {
@@ -173,6 +241,12 @@ body {
 }
 
 .footer {
+    /* width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    outline: 2px solid tomato;
+    padding-top: 100px;
+    padding-bottom: 100px; */
     background-color: var(--Dark);
 }
 
