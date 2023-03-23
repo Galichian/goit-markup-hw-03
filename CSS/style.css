@@ -1,0 +1,195 @@
+:root {
+    --Primary-Brand: #4D5AE5;
+    --Pressed-state: #404bbf;
+    --Dark: #2e2f42;
+    --Success: #31d0aa;
+    --Text: #434455;
+    --Subtle-Text: #8e8f99;
+    --Accent: #e7e9fc;
+    --Light: #f4f4fd;
+    --White-background: #ffffff;
+    --ModalModal-background: #fcfcfc;
+}
+
+body {
+    font-family: "roboto", sans-serif;
+
+    color: var(--Text);
+    background-color: var(--White-background);
+
+    /* font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em; */
+}
+
+.list {
+    list-style: none;
+    text-decoration: none;
+
+}
+
+.link {
+    text-decoration: none;
+}
+
+/* Логотип */
+
+.header-logo,
+.footer-logo {
+    color: var(--Primary-Brand);
+
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+}
+
+.logo-half {
+    color: var(--Dark);
+}
+
+.logo-half-footer {
+    color: var(--White-background);
+}
+
+/* Навігація */
+.header-link {
+    color: var(--Dark);
+
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+.header-link:focus,
+.header-link:hover {
+    color: var(--Pressed-state);
+
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.address,
+.address-link {
+    font-style: normal;
+}
+
+.address-link {
+    color: var(--Text);
+
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+.address-link:hover,
+.address-link:focus {
+    color: var(--Pressed-state);
+
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Heros */
+.heros {
+    background-color: var(--Dark);
+}
+
+.heros-title {
+    color: #FFFFFF;
+
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    text-align: center;
+    letter-spacing: 0.02em;
+
+}
+
+.heros-button {
+    color: var(--White-background);
+    background-color: var(--Primary-Brand);
+
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+}
+
+.heros-button:hover,
+.heros-button:focus {
+    background-color: var(--Pressed-state);
+}
+
+/* Наші переваги */
+.section-global-subtitle {
+    color: var(--Dark);
+
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+}
+
+.section-global-text,
+.section-team-prof {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+/* Наші роботи, портфоліо */
+.section-global-title {
+    color: var(--Dark);
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+
+}
+
+/* Наша команда */
+.section-team {
+    background-color: var(--Light);
+}
+
+.team-cards {
+    background-color: var(--White-background);
+}
+
+.footer-text {
+    color: var(--Light);
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+.footer {
+    background-color: var(--Dark);
+}
+
+/* Сайт Портфоліо */
+.projects-button {
+    color: var(--Primary-Brand);
+    background-color: var(--Accent);
+
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+}
+
+.projects-button:hover,
+.projects-button:focus {
+    background-color: var(--Pressed-state);
+    color: var(--White-background);
+}
