@@ -17,6 +17,24 @@
     box-sizing: border-box;
 }
 
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+    padding: 0;
+    margin: 0;
+}
+
 body {
     font-family: "roboto", sans-serif;
 
@@ -89,8 +107,7 @@ body {
 
 .site-nav .item {
     display: block;
-    padding-top: 24px;
-    padding-bottom: 24px;
+
 }
 
 .contact-nav {
@@ -102,12 +119,21 @@ body {
 .main-nav {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
 
 .header-navigation {
     display: flex;
     align-items: center;
+}
+
+.header {
+    border-bottom: 1px solid var(--Accent);
+}
+
+.header-link {
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .header-link:focus,
@@ -125,7 +151,7 @@ body {
 
 .address {
     font-style: normal;
-    /* margin-left: auto; */
+    margin-left: auto;
 }
 
 .address-link {
@@ -151,6 +177,8 @@ body {
 /* Heros */
 
 .heros {
+    padding-top: 188px;
+    padding-bottom: 188px;
     text-align: center;
     background-color: var(--Dark);
 }
@@ -175,6 +203,7 @@ body {
     display: inline-block;
     padding: 16px 32px;
     border-radius: 4px;
+    border: none;
     min-width: 169px;
     text-align: center;
     color: var(--White-background);
@@ -199,6 +228,20 @@ body {
     padding-bottom: 120px;
 }
 
+.section-advantages-title {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 .section-global-subtitle {
     margin-top: 0;
     margin-bottom: 8px;
@@ -211,7 +254,14 @@ body {
     letter-spacing: 0.02em;
 }
 
-.section-global-text,
+.section-global-text {
+    margin-top: 0;
+    margin-bottom: 0px;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
 .section-team-prof {
     margin-top: 0;
     margin-bottom: 0px;
@@ -219,6 +269,10 @@ body {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+}
+
+.advanced-box {
+    width: calc((100%-72px)/4);
 }
 
 .advantages-list {
@@ -258,12 +312,16 @@ body {
 }
 
 .section-team {
+    padding-top: 120px;
+    padding-bottom: 120px;
     background-color: var(--Light);
 }
 
 .team-cards {
     margin-right: 0;
     background-color: var(--White-background);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
 }
 
 .team-name {
@@ -281,6 +339,7 @@ body {
 }
 
 .footer-text {
+    width: 264px;
     color: var(--Light);
     font-size: 16px;
     line-height: 1.5;
@@ -290,10 +349,12 @@ body {
 }
 
 .footer {
-    width: 1440px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    /* width: 1440px;
     margin-left: auto;
     margin-right: auto;
-    outline: 2px solid tomato;
+    outline: 2px solid tomato; */
 
     background-color: var(--Dark);
 }
@@ -345,24 +406,28 @@ body {
     gap: 48px 24px;
 }
 
+.product-cards {
+    margin-right: 0;
+    background-color: var(--White-background);
+}
+
+
 .section-projects {
     padding-top: 100px;
     padding-bottom: 120px;
 }
 
-.img-size {
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
+
 
 .team-box {
     display: flex;
     gap: 24px;
-    justify-content: center;
+    /* justify-content: center; */
 
 }
 
-.box-footer {
-    padding: 100px 864px 100px 0;
+.card-box {
+    padding: 32px 16px;
+    border: 1px solid var(--Accent);
+    border-top: none;
 }
